@@ -71,21 +71,28 @@ The system includes both:
 ## Project Structure
 
 app/
- ├── Http/
- │    ├── Controllers/
- │    │    ├── Api/TaskController.php
- │    │    └── TaskViewController.php
- ├── Mail/TaskCompletedMail.php
- └── Models/Task.php
+├── Http/
+│   └── Controllers/
+│       ├── Api/
+│       │   └── TaskController.php
+│       └── TaskViewController.php
+├── Mail/
+│   └── TaskCompletedMail.php
+└── Models/
+    └── Task.php
 
 resources/
- └── views/
-      ├── tasks/index.blade.php
-      └── emails/task_completed.blade.php
+├── views/
+│   ├── tasks/
+│   │   └── index.blade.php
+│   └── emails/
+│       └── task_completed.blade.php
 
 routes/
- ├── api.php
- └── web.php
+├── api.php
+└── web.php
+
+---
 
 ## Author
 
